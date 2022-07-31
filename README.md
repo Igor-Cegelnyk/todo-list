@@ -21,7 +21,7 @@ python manage.py ranserver  # starts Django Server
 
 On the home page of the todo list, the following is displayed:
 
-- All information about tasks, sorted in order from uncompleted to completed and from newest to oldest;
+- All information about tasks, sorted in order from uncompleted to complete and from newest to oldest;
 - It is possible to add a new task;
 - Each task has a link to update and delete;
 - There is a possibility mark the task as "Complete" if the task is not completed and "Undo" if the task is completed.
