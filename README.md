@@ -34,4 +34,4 @@ On the tags page of the todo list, the following is displayed:
 
 ## Demo
 
-![Website Interface](#)
+![Website Interface](demo.png)
