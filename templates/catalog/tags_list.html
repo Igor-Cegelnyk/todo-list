@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Tags
+        <a href="{% url 'catalog:tags-create' %}"
+           class="btn btn-primary button">
+            Add
+        </a>
+    </h1>
+    {% if tags_list %}
+      <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>Name</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+        {% for tag in tags_list %}
+            <tr>
+              <td class="font-weight-bolder">
+                  {{ tag.name }}
+              </td>
+              <td>
+                  <a href="{% url 'catalog:tags-update' pk=tag.id %}" class="btn btn-secondary btn-sm">UPDATE</a>
+              </td>
+              <td>
+                  <a href="{% url 'catalog:tags-delete' pk=tag.id %}" class="btn btn-secondary btn-sm">DELETE</a>
+              </td>
+          </tr>
+        {% endfor %}
+      </table>
+
+    {% else %}
+        <p>There are no tags.</p>
+    {% endif %}
+{% endblock %}

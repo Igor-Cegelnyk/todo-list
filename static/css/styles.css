@@ -1,0 +1,28 @@
+body {
+    margin: 20px;
+}
+
+strong {
+    font-size: 22px;
+}
+
+.button {
+    float: right;
+}
+
+.done {
+    color: green;
+}
+
+.not_done {
+    color: red;
+}
+
+.deadline {
+    color: darkviolet;
+}
+
+.tags {
+    font-size: 20px;
+    color: gray;
+}
